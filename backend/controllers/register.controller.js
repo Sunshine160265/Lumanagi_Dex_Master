@@ -273,6 +273,7 @@ exports.getReferralUsersList = async (req, res) => {
 
 exports.getPlanDetails = async (req, res) => {
     try {
+        console.log("hii");
 
         let getplandetail = await UserModel.getPlanDetails();
         //     let referral_address = "";
@@ -715,7 +716,7 @@ function openWallet(code) {
 }
 
 
-exports.userBUSDDepositCheck = async (db, req, res) => {
+exports.DDepositChecuserBUSk = async (db, req, res) => {
     console.log(" in userBUSDDepositCheck");
 
     let data = await userModel.userBUSDDepositCheck();

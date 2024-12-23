@@ -25,7 +25,10 @@ var io = require('socket.io')(http);
 
 const pool = mysql.createPool({ host: config.mysqlHost, user: config.user, password: config.password, database: config.database, port: config.mysqlPort });
 // now get a Promise wrapped instance of that pool
+
 const promisePool = pool.promise();
+console.log("1",pool)
+console.log("2",promisePool)
 // /////////////////// SSL CODE ADDED
 // var fs = require('fs');
 // var http = require('http');
